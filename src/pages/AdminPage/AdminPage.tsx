@@ -104,9 +104,6 @@ export default function AdminPage() {
       </div>
       <div className="manage-objects">
         <HeaderComponent
-          isShowCart={false}
-          isShowMenu={false}
-          isShowSearch={false}
         />
         <div className="wrapper-body-admin">
           <div className="path-system">

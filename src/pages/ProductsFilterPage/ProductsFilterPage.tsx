@@ -411,15 +411,6 @@ function ClothesFilterPage(): React.ReactElement {
       let productList = await getProductList(filterAndOption);
       let productItems = productList[0].map((item) => (
         <Col xs={24} sm={12} md={8} lg={6}>
-          <CardComponent
-            id={item.id}
-            image={item.image as string}
-            name={item.name}
-            price={item.price}
-            discount={item.discount as number}
-            rated={item.rated as number}
-            numberOfSold={item.numberOfSold as number}
-          />
         </Col>
       ));
       // handleChangePagination(productList[1]);
