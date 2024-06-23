@@ -1,0 +1,118 @@
+#homepage .header-preview {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+#homepage .header-preview .more a:hover {
+  color: #000;
+}
+
+#homepage .header-preview a {
+  text-transform: capitalize;
+}
+
+#homepage .header-preview .more a {
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+#homepage .more:hover {
+  filter: opacity(0.5);
+}
+#homepage .fa-chevron-right {
+  padding: 0 10px;
+}
+#homepage .banner {
+  width: 20%;
+}
+#homepage .banner > img {
+  height: 92%;
+}
+.product > .slick-slider {
+  /* margin: 0 20px; */
+  /* width: 76%; */
+}
+#homepage .product {
+  /* line-height: 0 !important; */
+  margin-right: -10px;
+}
+/* .banner {
+  margin-right: 40px;
+} */
+#homepage .gender {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#homepage .gender .gender-item {
+  height: 64px;
+  width: 220px;
+  justify-content: center;
+  display: flex;
+  align-items: end;
+  margin-right: 50px;
+  padding-bottom: 19px;
+  border-bottom: 2px solid #97a0ad;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#homepage .gender .gender-item:hover {
+  border-bottom: 2px solid #fcaf17;
+  color: #fcaf17;
+}
+
+.custome-card-home-page {
+  width: 95% !important;
+}
+
+#homepage .listBanners{
+  position: relative;
+}
+
+#homepage .introduce{
+  position: absolute;
+  width: 400px;
+  top: 30%;
+  left: 10%;
+}
+
+#homepage .introduce .introduce-ttl{
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#homepage .introduce .introduce-content{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#homepage .text-animation {
+  background-image: linear-gradient(-225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+
+@keyframes textclip {
+ to {
+   background-position: -200% center;
+ }
+}
+
+/* responsive header */
