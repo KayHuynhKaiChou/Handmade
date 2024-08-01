@@ -1,6 +1,5 @@
 import { Button, Checkbox, Col, ColorPicker, Divider, Form, GetProp, Image, Input, InputNumber, Radio, Row, Select, Space, Upload, UploadProps } from 'antd';
 import { useState } from 'react';
-import OpenAI from "openai";
 import TextArea from 'antd/es/input/TextArea';
 import './CustomPage.css'
 import Title from 'antd/es/typography/Title';
@@ -32,20 +31,6 @@ const getBase64 = (img: FileType, callback: (url: string) => void) => {
 export default function CustomPage() {
     const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY
     const [imgUrl , setImgUrl] = useState('')
-
-    const handleSubmitForm = async (values : FieldTypeImage) => {
-        const openai = new OpenAI({
-            organization: "org-B4abeuYZ38jsbboZbf3WAbxh",
-            apiKey: OPENAI_API_KEY,
-            dangerouslyAllowBrowser: true
-        });
-        console.log(values)
-        const aaa = await openai.images.generate({
-            prompt: values.text,
-            n: 1,
-            size: "1024x1024"
-        })
-        console.log(aaa)
         // fetch(
         //     'https://api.openai.com/v1/images/generations',
         //     {
@@ -66,7 +51,6 @@ export default function CustomPage() {
         //     .then(res => {
         //         setImgUrl(res.data[0].url)
         //     })
-        //sk-None-qUpE1S4icK1VPoIK9RT1T3BlbkFJHMjcCNwvksNCvqlAYj3g
     }
 
     const [loading, setLoading] = useState(false);
