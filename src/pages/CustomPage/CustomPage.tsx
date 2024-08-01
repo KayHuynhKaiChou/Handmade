@@ -51,24 +51,23 @@ export default function CustomPage() {
         //     .then(res => {
         //         setImgUrl(res.data[0].url)
         //     })
-    }
 
     const [loading, setLoading] = useState(false);
-  const [imageUrl, setImageUrl] = useState<string>();
+    const [imageUrl, setImageUrl] = useState<string>();
 
-  const handleChange: UploadProps['onChange'] = (info) => {
-    if (info.file.status === 'uploading') {
-      setLoading(true);
-      return;
-    }
-    if (info.file.status === 'done') {
-      // Get this url from response in real world.
-      getBase64(info.file.originFileObj as FileType, (url) => {
-        setLoading(false);
-        setImageUrl(url);
-      });
-    }
-  };
+    const handleChange: UploadProps['onChange'] = (info) => {
+        if (info.file.status === 'uploading') {
+        setLoading(true);
+        return;
+        }
+        if (info.file.status === 'done') {
+        // Get this url from response in real world.
+        getBase64(info.file.originFileObj as FileType, (url) => {
+            setLoading(false);
+            setImageUrl(url);
+        });
+        }
+    };
 
     const uploadButton = (
         <button style={{ border: 0, background: 'none' }} type="button">
@@ -85,7 +84,7 @@ export default function CustomPage() {
                 layout='vertical'
                 // labelCol={{ span: 6 }}
                 // wrapperCol={{ span: 18 }}
-                onFinish={handleSubmitForm}
+                //onFinish={handleSubmitForm}
                 autoComplete="off"
             >
                 <Row gutter={42}>
@@ -215,7 +214,7 @@ export default function CustomPage() {
                 layout='vertical'
                 // labelCol={{ span: 6 }}
                 // wrapperCol={{ span: 18 }}
-                onFinish={handleSubmitForm}
+                //onFinish={handleSubmitForm}
                 autoComplete="off"
             >
                 <Title level={5}>3 mẫu hình ảnh (vui lòng chọn 1 mẫu bên dưới)</Title>
