@@ -75,8 +75,9 @@ img {
 #root {
   min-height: 100vh;
   overflow: hidden;
-  background-image: url('https://cdn.wallpapersafari.com/43/73/bCflHE.jpg');
-  background-size:cover;
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20240103/pngtree-fashionable-denim-blue-jeans-texture-vector-background-of-light-blue-canvas-image_13923113.png');
+  background-repeat: repeat;
+  /* background-size:cover;
   -webkit-animation: slidein 100s;
   animation: slidein 100s;
 
@@ -87,7 +88,7 @@ img {
   animation-iteration-count: infinite;
 
   -webkit-animation-direction: alternate;
-  animation-direction: alternate;              
+  animation-direction: alternate;               */
 }
 
 @-webkit-keyframes slidein {
@@ -106,3 +107,86 @@ img {
     max-width: 100%;
   }
 }
+
+/* Ẩn các nút tăng giảm trên Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*radio common*/
+
+.un_radio_wrap {
+  padding: 7px;
+}
+
+.un_radio_wrap input.un_radio {
+  display: none;
+}
+
+.un_radio_wrap input.un_radio + label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  font-weight: 600;
+}
+
+.un_radio_wrap input.un_radio + label::before {
+  content: '';
+  border-radius: 50%;
+  border-color: #83b5e1;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-width: 3px;
+  border-style: solid;
+  vertical-align: middle;
+}
+
+.un_radio_wrap input.un_radio + label::after {
+  content: '';
+  border-radius: 50%;
+  background-color: #337ab7;
+  height: 6px;
+  width: 6px;
+  left: 10px;
+  position: absolute;
+  opacity: 0.3;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.25s ease-in-out 0s;
+}
+
+.un_radio_wrap input.un_radio + label:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.un_radio_wrap input.un_radio:checked + label {
+  color: #337ab7;
+  cursor: pointer;
+}
+
+.un_radio_wrap input.un_radio:checked + label::before {
+  animation: ripple 0.5s linear forwards;
+  background-color: #337ab7;
+  border-color: #83b5e1;
+  transform: scale(1);
+}
+
+.un_radio_wrap input.un_radio:disabled + label {
+  color: #ebebeb;
+  cursor: not-allowed;
+}
+
+.un_radio_wrap input.un_radio:disabled + label::before {
+  background-color: unset;
+  border-color: #ebebeb;
+}
+
+.un_radio_wrap input.un_radio:disabled + label::after {
+  background-color: unset;
+}
+

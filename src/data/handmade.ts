@@ -123,3 +123,52 @@ export const listHandleMadeFake = [
         selled : 0
     }
 ]
+
+export const typesHandmade = [
+    {
+        label: 'túi jean đeo vai',
+        value: 1
+    },
+    // {
+    //     label: 'túi jean tote',
+    //     value: 2
+    // },
+    {
+        label: 'túi jean kẹp nách',
+        value: 3
+    }
+]
+
+export const typesSize = [
+    {
+        label: '10x13x7',
+        value: 1
+    },
+    {
+        label: '15x11x10',
+        value: 2
+    },
+    {
+        label: '20x25x10',
+        value: 3
+    }
+]
+
+export const optionsNameLogo = [
+    {
+        label: 'Chỉ gán tên',
+        value: 1
+    },
+    {
+        label: 'Chỉ gán logo',
+        value: 2
+    },
+    {
+        label: 'Gán cả tên và logo',
+        value: 3
+    },
+    {
+        label: 'Không gán tên và logo',
+        value: 4
+    }
+]

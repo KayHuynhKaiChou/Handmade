@@ -1,0 +1,27 @@
+.custom-wrapper{
+    background-color: rgb(205, 234, 234);
+    padding: 50px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.custom-wrapper .form-generate-img{
+    .ant-form-item-label{
+        font-size: 20px !important;
+    }
+
+    .btn-pattern-wrap{
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.custom-wrapper .image-generate{
+    display: flex;
+    gap: 40px;
+}
+
+.custom-wrapper .image-generate .img-item{
+    width: 380px;
+    height: 400px;
+}

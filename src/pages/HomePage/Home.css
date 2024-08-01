@@ -92,10 +92,10 @@
 
 #homepage .text-animation {
   background-image: linear-gradient(-225deg,
-      #231557 0%,
-      #44107a 29%,
-      #ff1361 67%,
-      #fff800 100%);
+      #ffffff 0%,
+      #fdfdfd 29%,
+      #00eeff 67%,
+      #ffffff 100%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;

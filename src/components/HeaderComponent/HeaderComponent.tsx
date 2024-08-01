@@ -1,5 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import "./header.css";
 export default function HeaderComponent() {
+
+  const navigate = useNavigate();
 
   return (
     <div id="header">
@@ -8,21 +11,25 @@ export default function HeaderComponent() {
           <div className="col-lg-1 col-md-2 col-sm-2">
             <div className="logo-wrap">
               <div className="logo-inner">
-                <img src="https://down-tx-vn.img.susercontent.com/5e1a7cc91f019850dee5b77859f79972_tn.webp" alt="" />
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/451806854_3715591738679082_8925721307352280345_n.png?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=EKaFdj98LPgQ7kNvgHOb40O&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEO2C9FkadyrdIF3Ctwq9fE5H-x35-ow_Anh1yUNfB81Q&oe=66D3008D" alt="" />
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-5 header-ttl neons col-sm-5">Tiệm Tháng Tám </div>
-          {/* <div className="col-md-2 header_item text-center">
-            Trang chủ
+          <div className="col-lg-3 col-md-3 header-ttl neons col-sm-5">Jean tái chế </div>
+          <div className="col-lg-5 col-md-4 d-flex">
+            <div 
+              className="header_item text-center"
+              onClick={() => navigate('/')}
+            >
+              Trang chủ
+            </div>
+            <div 
+              className="header_item text-center"
+              onClick={() => navigate('/custom')}
+            >
+              Sáng tạo
+            </div>
           </div>
-          <div className="col-md-2 header_item text-center">
-            Liên hệ
-          </div>
-          <div className="col-md-3 header_item text-center">
-            Sản phẩm tùy chỉnh
-          </div> */}
-          <div className="col-lg-4 col-md-2 col-sm-2"></div>
           <div className="col-lg-3 col-md-3 icon-connect-wrap col-sm-3">
             <div className="icon-connect">
               <i 
