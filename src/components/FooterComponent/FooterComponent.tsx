@@ -8,18 +8,18 @@ export default function FooterComponent() {
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="company">
                 <br/>
-                <h4>Nhóm khởi nghiệp TT8</h4>
+                <h4>NHÓM KHỞI NGHIỆP CPL</h4>
                 <div>
-                  Address: FPT University, Khu đô thị mới, Thành phố Qui Nhơn, Bình Định 55117, Việt Nam
+                  Địa chỉ: FPT University, Khu đô thị mới, Thành phố Qui Nhơn, Bình Định
                 </div>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="about">
                 <br/>
-                <h4>VỀ TT8</h4>
+                <h4>VỀ CÀ PHÊ LÀNG</h4>
                 <div>
-                  Chúng tôi tại TT8 cam kết cung cấp sự sáng tạo và chất lượng trong từng sản phẩm handmade, giúp khách hàng thể hiện phong cách cá nhân và tự tin.
+                  Chúng tôi tại CÀ PHÊ LÀNG cam kết cung cấp sự sáng tạo và chất lượng trong từng sản phẩm handmade, giúp khách hàng thể hiện phong cách cá nhân và tự tin.
                 </div>
               </div>
             </div>
@@ -32,7 +32,7 @@ export default function FooterComponent() {
                     <i className="fa-regular fa-envelope"></i>
                   </div>
                   <div className="col-md-11 col-sm-11">
-                    Email: tt8@gmail.com
+                    Email: caphelang@gmail.com
                   </div>
                 </div>
                 <div className="row phone">

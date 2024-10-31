@@ -75,8 +75,7 @@ img {
 #root {
   min-height: 100vh;
   overflow: hidden;
-  background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20240103/pngtree-fashionable-denim-blue-jeans-texture-vector-background-of-light-blue-canvas-image_13923113.png');
-  background-repeat: repeat;
+  background-color: #fff2df;
   /* background-size:cover;
   -webkit-animation: slidein 100s;
   animation: slidein 100s;

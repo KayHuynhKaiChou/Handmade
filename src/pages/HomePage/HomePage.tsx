@@ -1,10 +1,20 @@
 import SliderComponent from "../../components/SliderComponent/SliderComponent";
-import { useNavigate } from "react-router-dom";
 import './Home.css'
-import { listHandleMadeFake, types } from "../../data/handmade";
+import CardV1Component from "../../components/CardComponent/CardV1Component.tsx";
+import {Modal} from "antd";
+import {useState} from "react";
+import FormPackageBrandComponent from "../../components/FormPackageBrandComponent/FormPackageBrandComponent.tsx";
 
 export default function HomePage() {
-  const navigate = useNavigate();
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleCancel = () => {
+        setIsOpen(false);
+    }
+
+    const handleOpenModal = () => {
+        setIsOpen(true);
+    }
 
   return (
     <div className="container" id="homepage">
@@ -12,41 +22,29 @@ export default function HomePage() {
         <SliderComponent
           slidesToShow={1}
           listItems={[
-            'https://static-images.vnncdn.net/files/publish/2023/4/10/jean6-1465.jpg',
-            'https://yenmay2hand.com/wp-content/uploads/2023/03/tai-che-quan-jean-cu-thanh-vay-6.jpg'
+            'https://mozanio.com/wp-content/uploads/2021/05/xe-take-away-4.png',
+            'https://quaybanhangdidonggiare.com/upload/products/xe-cafe-take-away1559379185AG08t.jpg'
           ]}
           nameSlider={"imagesBackground"}
         />
         <div className="introduce">
-          <div className="introduce-ttl text-animation">Tiệm tháng 8</div>
+          <div className="introduce-ttl text-animation">Cà phê làng</div>
           <div className="introduce-content text-animation">
             Cung cấp túi xách thủ công làm từ quần jeans tái chế, giúp giảm lượng rác thải và tạo phong cách cá nhân độc đáo.
           </div>
         </div>
       </div>
-      {types.map(type => {
-        const filterListHandMade = listHandleMadeFake.filter(hm => hm.typeId == type.id)
-        return (
-          <>         
-            <div className="header-preview">
-              <div className="content">
-                <a onClick={() => navigate("/product", {})}>{type.name}</a>
-              </div>
-              <div className="more">
-                <a onClick={() => window.open(type.linkDetailType , '_blank')}>xem thêm</a>
-                <i className="fa-solid fa-chevron-right"></i>
-              </div>
-            </div>
-            <div className="product">
-              <SliderComponent
-                slidesToShow={5}
-                listItems={filterListHandMade}
-                nameSlider={"clothesFilter"}
-              />
-            </div>
-          </>
-        )
-      })}
+      <div className="bl_mainTitle_wrap">
+        <div className="bl_mainTitle">Chọn gói nhượng quyền thương hiệu</div>
+      </div>
+      <div className="bl_package_wrap">
+          <CardV1Component onHandleClickBtn={handleOpenModal}/>
+          <CardV1Component onHandleClickBtn={handleOpenModal}/>
+          <CardV1Component onHandleClickBtn={handleOpenModal}/>
+      </div>
+        <Modal title={null} width={1000} open={isOpen} onCancel={handleCancel} footer={null} >
+            <FormPackageBrandComponent moneyBank={15000} />
+        </Modal>
     </div>
   );
 }

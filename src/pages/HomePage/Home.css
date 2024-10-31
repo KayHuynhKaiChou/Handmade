@@ -1,3 +1,31 @@
+#homepage .bl_mainTitle_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#homepage .bl_mainTitle_wrap .bl_mainTitle {
+  max-width: 650px;
+  text-align: center;
+  font-family: "YouTube Sans", "Roboto", sans-serif;
+  font-size: 5.4rem;
+  line-height: 8rem;
+  font-weight: 700;
+  white-space: pre-wrap;
+}
+
+#homepage .bl_package_wrap {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.ant-card-head-title h2{
+  margin-top: 0.5em;
+}
+
 #homepage .header-preview {
   display: flex;
   justify-content: space-between;
@@ -59,11 +87,6 @@
   text-transform: uppercase;
 }
 
-#homepage .gender .gender-item:hover {
-  border-bottom: 2px solid #fcaf17;
-  color: #fcaf17;
-}
-
 .custome-card-home-page {
   width: 95% !important;
 }
@@ -94,7 +117,7 @@
   background-image: linear-gradient(-225deg,
       #ffffff 0%,
       #fdfdfd 29%,
-      #00eeff 67%,
+      #a2836e 67%,
       #ffffff 100%);
   background-size: auto auto;
   background-clip: border-box;

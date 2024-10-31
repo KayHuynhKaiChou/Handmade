@@ -15,9 +15,9 @@ export default function HeaderComponent() {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-md-3 header-ttl neons col-sm-5">Jean tái chế </div>
+          <div className="col-lg-3 col-md-3 header-ttl neons col-sm-5">Cà phê làng </div>
           <div className="col-lg-5 col-md-4 d-flex">
-            <div 
+            {/* <div 
               className="header_item text-center"
               onClick={() => navigate('/')}
             >
@@ -28,7 +28,7 @@ export default function HeaderComponent() {
               onClick={() => navigate('/custom')}
             >
               Sáng tạo
-            </div>
+            </div> */}
           </div>
           <div className="col-lg-3 col-md-3 icon-connect-wrap col-sm-3">
             <div className="icon-connect">

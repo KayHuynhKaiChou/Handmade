@@ -1,8 +1,12 @@
 .custom-wrapper{
-    background-color: rgb(205, 234, 234);
+    background-color: #fff2df;
     padding: 50px;
     margin-top: 40px;
-    border-radius: 20px;
+    border-radius: 8px;
+}
+
+.ant-modal-content {
+    padding: 0 !important;
 }
 
 .custom-wrapper .form-generate-img{
