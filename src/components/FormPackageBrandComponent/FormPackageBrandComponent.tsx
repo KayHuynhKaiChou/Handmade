@@ -1,11 +1,9 @@
-import { Button, Checkbox, Col, ColorPicker, Divider, Form, GetProp, Image, Input, InputNumber, Radio, Row, Select, Space, Upload, UploadProps } from 'antd';
-import { useState } from 'react';
+import { Button, Col, ColorPicker, Divider, Form, Image, Input,  Row, Select } from 'antd';
 import TextArea from 'antd/es/input/TextArea';
 import './CustomPage.css'
 import Title from 'antd/es/typography/Title';
 import { optionsNameLogo, typesHandmade, typesSize } from '../../data/handmade';
 import { Option } from 'antd/es/mentions';
-import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
 import RadioHM from '../../common/RadioHM';
 
 type FieldTypeImage = {
@@ -20,17 +18,7 @@ type FieldTypeCustom = {
     
 };
 
-type FileType = Parameters<GetProp<UploadProps, 'beforeUpload'>>[0];
-
-const getBase64 = (img: FileType, callback: (url: string) => void) => {
-  const reader = new FileReader();
-  reader.addEventListener('load', () => callback(reader.result as string));
-  reader.readAsDataURL(img);
-};
-
 export default function CustomPage() {
-    const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY
-    const [imgUrl , setImgUrl] = useState('')
         // fetch(
         //     'https://api.openai.com/v1/images/generations',
         //     {
@@ -51,30 +39,6 @@ export default function CustomPage() {
         //     .then(res => {
         //         setImgUrl(res.data[0].url)
         //     })
-
-    const [loading, setLoading] = useState(false);
-    const [imageUrl, setImageUrl] = useState<string>();
-
-    const handleChange: UploadProps['onChange'] = (info) => {
-        if (info.file.status === 'uploading') {
-        setLoading(true);
-        return;
-        }
-        if (info.file.status === 'done') {
-        // Get this url from response in real world.
-        getBase64(info.file.originFileObj as FileType, (url) => {
-            setLoading(false);
-            setImageUrl(url);
-        });
-        }
-    };
-
-    const uploadButton = (
-        <button style={{ border: 0, background: 'none' }} type="button">
-          {loading ? <LoadingOutlined /> : <PlusOutlined />}
-          <div style={{ marginTop: 8 }}>Upload</div>
-        </button>
-    );
 
     return (
         <div className='container custom-wrapper'>
@@ -153,23 +117,6 @@ export default function CustomPage() {
                         </Form.Item>
                     </Col>
                     <Col span={2}>
-                        <Form.Item<FieldTypeImage>
-                            label="Logo"
-                            name="text"
-                            rules={[{ required: true, message: 'Please input your request!' }]}
-                        >
-                           <Upload
-                                name="avatar"
-                                listType="picture-circle"
-                                className="avatar-uploader"
-                                showUploadList={false}
-                                action="https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload"
-                                // beforeUpload={beforeUpload}
-                                // onChange={handleChange}
-                            >
-                                {imageUrl ? <img src={imageUrl} alt="avatar" style={{ width: '100%' }} /> : uploadButton}
-                            </Upload>
-                        </Form.Item>
                     </Col>
                 </Row>
                 <Row gutter={160}>
@@ -226,10 +173,6 @@ export default function CustomPage() {
                     <Image
                     className='img-item'
                         src='https://scontent.fsgn2-7.fna.fbcdn.net/v/t1.15752-9/452906279_424297463969885_7951356330067123652_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_ohc=MNT5VjzUjVgQ7kNvgE9PiJR&_nc_ht=scontent.fsgn2-7.fna&oh=03_Q7cD1QEUkiNcL_ucS4ON2V_qCGVYPkGYD_CXTet00DXnIfh04g&oe=66D323F4'
-                    />
-                    <Image
-                    className='img-item'
-                        src='https://scontent.xx.fbcdn.net/v/t1.15752-9/451442460_2257404427945989_5013871884684780686_n.png?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=7fs4neXOUoYQ7kNvgFHRDVe&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&gid=ADoBTy7_G_FisBQc6ovEJRo&oh=03_Q7cD1QE6sk0phANi6mDpYY2x0QXYCrVD8Wh2vvJIW9psDI_LCA&oe=66D31DD2'
                     />
                 </div>
                 <Row gutter={42}>
