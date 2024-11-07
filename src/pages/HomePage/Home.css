@@ -6,10 +6,10 @@
 }
 
 #homepage .bl_mainTitle_wrap .bl_mainTitle {
-  max-width: 650px;
+  max-width: 1000px;
   text-align: center;
   font-family: "YouTube Sans", "Roboto", sans-serif;
-  font-size: 5.4rem;
+  font-size: 2.4rem;
   line-height: 8rem;
   font-weight: 700;
   white-space: pre-wrap;

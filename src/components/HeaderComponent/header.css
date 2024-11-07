@@ -159,8 +159,9 @@
 
 /**/
 
-#header .icon-connect i{
+#header .icon-connect .act_nhuong_quyen{
   color: #fff;
+  font-size: 20px;
   cursor: pointer;
 }
 #header .fa-brands {

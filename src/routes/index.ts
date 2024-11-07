@@ -12,6 +12,7 @@ import PaymentPage from "../pages/PaymentPage/PaymentPage";
 import PaymentSuccessPage from "../pages/PaymentSuccessPage/PaymentSuccessPage";
 import ProductSearchPage from "../pages/ProductSearchPage/ProductSearchPage";
 import { Role } from "../model/UserModal";
+import FranchisePage from "../pages/FranchisePage/FranchisePage.tsx";
 
 export const routes = [
   {
@@ -86,11 +87,12 @@ export const routes = [
     isShowHeaderFooter: false,
     role: [Role['[ROLE_USER]']]
   },
-  // {
-  //     path: '/profile-user/information-user',
-  //     page: InforUserComponent,
-  //     isShowHeaderFooter: true
-  // },
+  {
+    path: '/nhuong-quyen',
+    page: FranchisePage,
+    isShowHeaderFooter: true,
+    role: [Role['[ROLE_USER]']]
+  },
   // {
   //     path: '/profile-user/order-user',
   //     page: OrderHistoryComponent,
