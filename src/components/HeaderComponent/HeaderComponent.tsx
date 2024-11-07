@@ -9,14 +9,16 @@ export default function HeaderComponent() {
     <div id="header">
       <div className="container">
         <div className="row">
-          <div className="col-lg-1 col-md-2 col-sm-2">
+          <div className="col-lg-1 col-md-2 col-sm-2" style={{ cursor: 'pointer' }} onClick={() => navigate("/")}>
             <div className="logo-wrap">
               <div className="logo-inner">
                 <img src={logocflang} alt="" />
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-md-3 header-ttl neons col-sm-5">Cà phê làng </div>
+          <div className="col-lg-3 col-md-3 header-ttl neons col-sm-5" style={{ cursor: 'pointer' }} onClick={() => navigate("/")} >
+            Cà phê làng
+          </div>
           <div className="col-lg-5 col-md-4 d-flex">
             {/* <div 
               className="header_item text-center"
@@ -49,7 +51,7 @@ export default function HeaderComponent() {
                   className="act_nhuong_quyen"
                   onClick={() => navigate('/nhuong-quyen')}
               >
-                Nhượng quyền Guta
+                Nhượng quyền Cafe làng
               </div>
             </div>
           </div>

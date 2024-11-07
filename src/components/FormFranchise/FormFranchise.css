@@ -1,0 +1,77 @@
+#FormFranchise {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(57 57 57);
+}
+
+#FormFranchise .form-franchise-wrap {
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+#FormFranchise .form-franchise-wrap .franchise-ttl {
+    color: rgb(244 169 22);
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 50px 0px;
+}
+
+#FormFranchise .form-franchise-wrap .franchise-sub-ttl {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#FormFranchise .form-franchise-wrap .form-franchise .btn-send-request {
+    display: flex;
+    justify-content: center;
+
+    button {
+        background-color: rgb(251 174 23);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+}
+
+#FormFranchise .information-contact {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+#FormFranchise .information-contact .contact-card {
+    border-radius: 20px;
+    background: #fff;
+    flex-basis: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#FormFranchise .information-contact .contact-card .name{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#FormFranchise .information-contact .contact-card img{
+    width: 50px;
+}
+
+#FormFranchise .information-contact .contact-card .contact-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ant-form-item-explain-error {
+    font-size: 18px; /* Tăng kích thước font theo ý bạn */
+}
+
+.ant-input-lg {
+    font-size: 18px;
+}
