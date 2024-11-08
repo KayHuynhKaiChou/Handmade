@@ -6,7 +6,7 @@ function IntroduceFranchise() {
     return (
         <div id="IntroduceFranchise">
             <div className="introduce-content-wrap">
-                <div className="content-ttl">Tự tin khởi nghiệp cùng Cà phê Làng</div>
+                <div className="content-ttl">Tự tin đồng hành cùng Cà phê Làng</div>
                 {/*<div className="content-sub">*/}
                 {/*    Với đội ngũ giàu kinh nghiệm trong lĩnh vực, đang vận hành hệ thống hơn 100 cửa hàng, chúng tôi tự tin giúp bạn xây dựng một cửa hàng thành công.*/}
                 {/*</div>*/}

@@ -19,7 +19,7 @@ export default function HeaderComponent() {
           <div className="col-lg-3 col-md-3 header-ttl neons col-sm-5" style={{ cursor: 'pointer' }} onClick={() => navigate("/")} >
             Cà phê làng
           </div>
-          <div className="col-lg-5 col-md-4 d-flex">
+          <div className="col-lg-3 col-md-4 d-flex">
             {/* <div 
               className="header_item text-center"
               onClick={() => navigate('/')}
@@ -33,7 +33,7 @@ export default function HeaderComponent() {
               Sáng tạo
             </div> */}
           </div>
-          <div className="col-lg-3 col-md-3 icon-connect-wrap col-sm-3">
+          <div className="col-lg-5 col-md-3 icon-connect-wrap col-sm-3">
             <div className="icon-connect">
               {/*<i */}
               {/*  className="fa-brands fa-facebook"*/}
