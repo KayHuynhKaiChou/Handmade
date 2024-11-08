@@ -20,15 +20,6 @@ function CardV1Component({ version = 1, inforCafe, onHandleClickBtn } : { versio
                     style={{ width: 400 }}
                     cover={<img alt="example" src={inforCafe.image} />}
                 >
-                    <Meta
-                        title="Thông tin người chủ bán cafe"
-                        description={(
-                            <div>
-                                <p>{inforCafe.address}</p>
-                                <p>{inforCafe.content}</p>
-                            </div>
-                        )}
-                    />
                 </Card>
             )}
         </>

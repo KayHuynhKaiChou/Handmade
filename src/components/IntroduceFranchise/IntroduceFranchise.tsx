@@ -6,10 +6,10 @@ function IntroduceFranchise() {
     return (
         <div id="IntroduceFranchise">
             <div className="introduce-content-wrap">
-                <div className="content-ttl">Tự tin khởi nghiệp cùng cafe làng</div>
-                <div className="content-sub">
-                    Với đội ngũ giàu kinh nghiệm trong lĩnh vực, đang vận hành hệ thống hơn 100 cửa hàng, chúng tôi tự tin giúp bạn xây dựng một cửa hàng thành công.
-                </div>
+                <div className="content-ttl">Tự tin khởi nghiệp cùng Cà phê Làng</div>
+                {/*<div className="content-sub">*/}
+                {/*    Với đội ngũ giàu kinh nghiệm trong lĩnh vực, đang vận hành hệ thống hơn 100 cửa hàng, chúng tôi tự tin giúp bạn xây dựng một cửa hàng thành công.*/}
+                {/*</div>*/}
                 <div className="content-main">
                     <div className="cf-strength">
                         <img src={CheckedIcon} alt=""/>

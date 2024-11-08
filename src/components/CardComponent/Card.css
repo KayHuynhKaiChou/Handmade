@@ -79,3 +79,7 @@
 .cart-header .cart-header__sold {
   margin-left: 3px;
 }
+
+.ant-card-body {
+  padding: 0px !important;
+}

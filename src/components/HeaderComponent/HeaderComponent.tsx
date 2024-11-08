@@ -51,7 +51,7 @@ export default function HeaderComponent() {
                   className="act_nhuong_quyen"
                   onClick={() => navigate('/nhuong-quyen')}
               >
-                Nhượng quyền Cafe làng
+                Đồng hành cùng Cà phê Làng
               </div>
             </div>
           </div>

@@ -37,7 +37,7 @@ export default function HomePage() {
       </div>
       <div className="bl_mainTitle_wrap">
         <div className="bl_mainTitle">
-            các chuỗi cafe đã được nhượng quyền thương hiệu
+            Các quán đã tham gia chuỗi Cà phê Làng
         </div>
       </div>
       <div className="bl_package_wrap">

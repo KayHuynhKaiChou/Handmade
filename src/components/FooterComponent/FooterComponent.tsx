@@ -8,7 +8,7 @@ export default function FooterComponent() {
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="company">
                 <br/>
-                <h4>NHÓM KHỞI NGHIỆP CPL</h4>
+                <h4>NHÓM CÀ PHÊ LÀNG</h4>
                 <div>
                   Địa chỉ: FPT University, Khu đô thị mới, Thành phố Qui Nhơn, Bình Định
                 </div>
