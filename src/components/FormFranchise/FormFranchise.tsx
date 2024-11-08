@@ -113,7 +113,7 @@ function FormFranchise() {
                 <div className="information-contact">
                     <div className="contact-card">
                         <img src={ContactSvg}/>
-                        <div className="name">Nguyễn Gia Hân</div>
+                        <div className="name">Nguyễn Huỳnh Gia Hân</div>
                         <div className="contact-info">
                             <TiPhoneOutline/>
                             0988798112
