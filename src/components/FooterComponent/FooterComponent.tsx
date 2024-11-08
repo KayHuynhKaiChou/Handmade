@@ -39,7 +39,7 @@ export default function FooterComponent() {
                   <div className="col-md-1 col-sm-1">
                     <i className="fa-solid fa-phone fa-shake"></i>
                   </div>
-                  <div className="col-md-11 col-sm-11">Phone: 0984298725</div>
+                  <div className="col-md-11 col-sm-11">Phone: 0337740251</div>
                 </div>
               </div>
             </div>
@@ -60,16 +60,16 @@ export default function FooterComponent() {
           <div className="icon-connect">
             <i 
               className="fa-brands fa-facebook"
-              onClick={() => window.open('https://www.facebook.com/tiemthang8' ,'_blank')}
+              onClick={() => window.open('https://www.facebook.com/people/C%C3%A0-ph%C3%AA-L%C3%A0ng/61566996901041/' ,'_blank')}
             ></i>
-            <i 
-              className="fa-brands fa-tiktok"
-              onClick={() => window.open('https://www.facebook.com/tiemthang8' ,'_blank')}
-            ></i>
-            <i 
-              className="fa-brands fa-instagram"
-              onClick={() => window.open('https://www.instagram.com/tiem_thang_8?fbclid=IwZXh0bgNhZW0CMTAAAR1gSj-HMAh0l9_-lTo0gCBjHCl-0UL-PDYE5kQi0PXRN3wz7hPX91q5Zgg_aem_QpW9eXAiT2PyxOmWCHhgog' ,'_blank')}
-            ></i>
+            {/*<i */}
+            {/*  className="fa-brands fa-tiktok"*/}
+            {/*  onClick={() => window.open('https://www.facebook.com/tiemthang8' ,'_blank')}*/}
+            {/*></i>*/}
+            {/*<i */}
+            {/*  className="fa-brands fa-instagram"*/}
+            {/*  onClick={() => window.open('https://www.instagram.com/tiem_thang_8?fbclid=IwZXh0bgNhZW0CMTAAAR1gSj-HMAh0l9_-lTo0gCBjHCl-0UL-PDYE5kQi0PXRN3wz7hPX91q5Zgg_aem_QpW9eXAiT2PyxOmWCHhgog' ,'_blank')}*/}
+            {/*></i>*/}
           </div>
         </div>
       </div>

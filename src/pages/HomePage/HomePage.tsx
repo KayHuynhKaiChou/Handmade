@@ -1,4 +1,3 @@
-import SliderComponent from "../../components/SliderComponent/SliderComponent";
 import './Home.css'
 import CardV1Component from "../../components/CardComponent/CardV1Component.tsx";
 import {Modal} from "antd";
@@ -21,13 +20,7 @@ export default function HomePage() {
   return (
     <div className="container" id="homepage">
       <div className="listBanners">
-        <SliderComponent
-          slidesToShow={1}
-          listItems={[
-              cflBanner
-          ]}
-          nameSlider={"imagesBackground"}
-        />
+        <img src={cflBanner} style={{ width: '100%' , height: '600px' }} />
         {/*<div className="introduce">*/}
         {/*  <div className="introduce-ttl text-animation">Cà phê làng</div>*/}
         {/*  <div className="introduce-content text-animation">*/}
